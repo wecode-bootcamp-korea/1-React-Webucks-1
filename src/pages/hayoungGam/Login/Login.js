@@ -4,8 +4,15 @@ import './Login.scss';
 
 class Login extends Component {
   render() {
+    const {
+      location: { pathname },
+    } = this.props;
     return (
-      <div className="login-container">
+      <div
+        className={
+          pathname === '/login-hayoung' ? 'container--login' : 'container'
+        }
+      >
         <div className="login-box">
           <h1 className="logo">Starbugs</h1>
           <LoginForm />

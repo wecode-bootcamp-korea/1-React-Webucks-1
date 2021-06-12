@@ -1,11 +1,4 @@
 @import 'styles/common';
-
-.login-container {
-  @extend %flexCenter;
-  min-height: 100vh;
-  background: $grey-100;
-}
-
 .login-box {
   display: flex;
   flex-direction: column;
