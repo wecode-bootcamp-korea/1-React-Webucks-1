@@ -16,7 +16,7 @@
     border-radius: 5px;
     transition: 0.1s ease-in-out;
 
-    &--active {
+    &.active {
       border-color: $green-primary-color;
     }
   }
