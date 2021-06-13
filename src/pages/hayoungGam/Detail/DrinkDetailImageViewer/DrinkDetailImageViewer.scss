@@ -1,0 +1,16 @@
+/* DrinkDetailImageViewer.js */
+@import 'styles/variables';
+
+.drink-img {
+  width: 40%;
+
+  &__file {
+    width: 100%;
+    height: 470px;
+    object-fit: cover;
+  }
+}
+
+.beverage-infos {
+  flex: 1 1 60%;
+}

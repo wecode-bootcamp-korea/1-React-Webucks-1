@@ -1,0 +1,12 @@
+/* Detail.js */
+@import 'styles/variables';
+
+.drink-detail-area {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 40px;
+}
+
+.drink-infos {
+  width: 60%;
+}
