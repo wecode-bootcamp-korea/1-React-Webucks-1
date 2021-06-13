@@ -1,0 +1,46 @@
+/* DrinkItem.js */
+@import 'styles/variables';
+
+.drinks__item {
+  %img {
+    width: 100%;
+    height: 100%;
+    transition: 0.9s cubic-bezier(0.34, 0.75, 0.58, 1);
+    object-fit: cover;
+  }
+
+  &__link {
+    display: block;
+    height: 260px;
+    margin-bottom: 13px;
+    overflow: hidden;
+
+    &:hover %img {
+      transform: scale(1.1);
+    }
+  }
+
+  &__img {
+    @extend %img;
+
+    &.matcha {
+      object-position: 0 92%;
+    }
+
+    &.latte {
+      object-position: 0 63%;
+    }
+  }
+
+  &__name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__text {
+      margin-right: 10px;
+      line-height: 1;
+      text-align: center;
+    }
+  }
+}

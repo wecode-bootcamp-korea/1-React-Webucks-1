@@ -1,8 +1,14 @@
 import { Component } from 'react';
+import DrinkSection from './DrinkSection/DrinkSection';
+import './List.scss';
 
 class List extends Component {
   render() {
-    return <p>List hayoungpage</p>;
+    return (
+      <div className="container">
+        <DrinkSection />
+      </div>
+    );
   }
 }
 
