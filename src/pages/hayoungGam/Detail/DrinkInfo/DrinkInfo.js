@@ -1,15 +1,20 @@
 import { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart as farHeart } from '@fortawesome/free-regular-svg-icons';
+import { faHeart as fasHeart } from '@fortawesome/free-solid-svg-icons';
 import './DrinkInfo.scss';
 
 class DrinkInfo extends Component {
   constructor() {
     super();
     this.state = {
-      iconHeart: farHeart,
+      isClicked: false,
     };
   }
+
+  toggleLikeBtn = () => {
+    this.setState({ isClicked: !this.state.isClicked });
+  };
 
   render() {
     return (
@@ -20,7 +25,10 @@ class DrinkInfo extends Component {
             Malcha Latte from Jeju Organic farm
           </p>
           <div className="drink-like-btn">
-            <FontAwesomeIcon icon={this.state.iconHeart} />
+            <FontAwesomeIcon
+              onClick={this.toggleLikeBtn}
+              icon={this.state.isClicked ? fasHeart : farHeart}
+            />
           </div>
         </div>
         <p className="drink-desc">
