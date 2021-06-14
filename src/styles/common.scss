@@ -34,12 +34,3 @@ body {
   font-weight: 700;
   text-align: center;
 }
-
-.fa-heart {
-  color: $grey-600;
-  cursor: pointer;
-
-  &[data-prefix='fas'] {
-    color: $red-color;
-  }
-}

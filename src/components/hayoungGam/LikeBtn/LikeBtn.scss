@@ -1,0 +1,11 @@
+/* DrinkItem.js */
+@import 'styles/variables';
+
+.fa-heart {
+  color: $grey-600;
+  cursor: pointer;
+
+  &[data-prefix='fas'] {
+    color: $red-color;
+  }
+}
