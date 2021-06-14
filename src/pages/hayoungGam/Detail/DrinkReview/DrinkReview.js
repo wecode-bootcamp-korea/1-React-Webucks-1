@@ -1,4 +1,5 @@
 import { Component } from 'react';
+import { v4 as uuidv4 } from 'uuid';
 import DrinkReviewComment from '../DrinkReviewComment/DrinkReviewComment';
 import './DrinkReview.scss';
 
@@ -10,11 +11,18 @@ class DrinkReview extends Component {
     };
   }
 
+  removeReviews = comment => {
+    const commentId = comment.target.parentNode.id;
+    this.setState({
+      reviews: this.state.reviews.filter(review => review.id !== commentId),
+    });
+  };
+
   saveInputValue = event => {
     event.preventDefault();
     const {
       target: {
-        reviewerId: { value: id },
+        reviewerId: { value: userId },
       },
     } = event;
     const {
@@ -23,13 +31,13 @@ class DrinkReview extends Component {
       },
     } = event;
 
-    if (!id) {
+    if (!userId) {
       alert('ID를 입력해주세요🙂');
     } else if (!comment) {
       alert('리뷰를 입력해주세요🙂');
-    } else if (id && comment) {
+    } else if (userId && comment) {
       this.setState({
-        reviews: [...this.state.reviews, { id, comment }],
+        reviews: [...this.state.reviews, { id: uuidv4(), userId, comment }],
       });
       event.target.reset();
     } else {
@@ -39,13 +47,18 @@ class DrinkReview extends Component {
 
   render() {
     const { reviews } = this.state;
+    console.log(reviews);
     return (
       <div className="drink-review">
         <h4 className="drink-review__title">리뷰</h4>
         <ul className="drink-review__list">
           {reviews.length ? (
             reviews.map(review => (
-              <DrinkReviewComment key={review.id} {...review} />
+              <DrinkReviewComment
+                key={review.id}
+                {...review}
+                removeReviews={this.removeReviews}
+              />
             ))
           ) : (
             <li className="no-review-message">현재 등록된 리뷰가 없습니다.</li>
