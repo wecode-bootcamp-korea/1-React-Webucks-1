@@ -5,6 +5,12 @@ import './DrinkInfo.scss';
 class DrinkInfo extends Component {
   render() {
     const { props } = this;
+    console.log(props.allergic);
+    if (props.allergic) {
+      console.log('Fdsaf');
+    } else {
+      console.log('a');
+    }
     return (
       <>
         <div className="drink-name">
@@ -63,9 +69,11 @@ class DrinkInfo extends Component {
             </ul>
           </div>
         </div>
-        <div className="drink-allergic-info">
-          <p>알레르기 유발 요인 : {props.allergic}</p>
-        </div>
+        {props.allergic && (
+          <div className="drink-allergic-info">
+            <p>알레르기 유발 요인 : {props.allergic}</p>
+          </div>
+        )}
       </>
     );
   }
