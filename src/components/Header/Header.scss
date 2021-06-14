@@ -1,5 +1,6 @@
 /* Header.js */
 @import 'styles/variables';
+@import 'styles/placeholders';
 
 .header {
   position: fixed;
@@ -12,8 +13,7 @@
   z-index: 999;
 
   & .container {
-    display: flex;
-    justify-content: space-between;
+    @extend %flexBetween;
     align-items: center;
     height: 100%;
     padding: 0;
@@ -27,9 +27,7 @@
 
   & .nav {
     &__list {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @extend %flexCenter;
     }
 
     &__item {

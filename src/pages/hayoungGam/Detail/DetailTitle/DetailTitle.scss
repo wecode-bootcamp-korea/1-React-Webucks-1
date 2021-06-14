@@ -1,5 +1,6 @@
 /* DetailTitle.js */
 @import 'styles/variables';
+@import 'styles/placeholders';
 
 .drink-category-title {
   margin-bottom: 5px;
@@ -9,8 +10,7 @@
 }
 
 .breadcrumbs {
-  display: flex;
-  justify-content: flex-end;
+  @extend %flexEnd;
   margin-bottom: 20px;
   color: $grey-700;
 

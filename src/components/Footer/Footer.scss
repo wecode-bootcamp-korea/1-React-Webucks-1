@@ -1,5 +1,6 @@
 /* Footer.js */
 @import 'styles/variables';
+@import 'styles/placeholders';
 
 .footer {
   width: 100%;
@@ -7,8 +8,7 @@
   background: $black-secondary-color;
 
   & .container {
-    display: flex;
-    justify-content: space-between;
+    @extend %flexBetween;
     padding: 40px 0;
   }
 }
