@@ -7,6 +7,7 @@ class LoginForm extends Component {
     this.state = {
       idInputValue: '',
       pwInputValue: '',
+      isBtnChange: false,
     };
   }
 
@@ -18,10 +19,21 @@ class LoginForm extends Component {
     this.setState({ pwInputValue: event.target.value });
   };
 
+  loginKeyup = event => {
+    if (
+      this.state.idInputValue.includes('@') &&
+      this.state.pwInputValue.length > 4
+    ) {
+      this.setState({ isBtnChange: true });
+    } else {
+      this.setState({ isBtnChange: false });
+    }
+  };
+
   render() {
     return (
       <div className="LoginForm">
-        <div className="formContainer">
+        <div className="formContainer" onKeyUp={this.loginKeyup}>
           <input
             type="text"
             className="inputId"
@@ -35,10 +47,8 @@ class LoginForm extends Component {
             onChange={this.handlePwInput}
           />
           <button
+            className={this.state.isBtnChange ? 'loginBtn active' : 'loginBtn'}
             type="button"
-            className="loginBtn active"
-            // onClick="location='./list.html'"
-            disabled
           >
             로그인
           </button>
