@@ -1,0 +1,12 @@
+/* DetailContents.js */
+@import 'styles/variables';
+@import 'styles/placeholders';
+
+.drink-detail-area {
+  @extend %flexBetween;
+  gap: 0 40px;
+}
+
+.drink-infos {
+  width: 60%;
+}

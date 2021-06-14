@@ -34,7 +34,7 @@ class Routes extends Component {
           <Route exact path="/detail-songmi" component={DetailSongmi} />
           <Route exact path="/login-hayoung" component={LoginHayoung} />
           <Route exact path="/list-hayoung" component={ListHayoung} />
-          <Route exact path="/detail-hayoung" component={DetailHayoung} />
+          <Route exact path="/detail-hayoung/:id" component={DetailHayoung} />
           <Route exact path="/login-jingeun" component={LoginJingeun} />
           <Route exact path="/list-jingeun" component={ListJingeun} />
           <Route exact path="/detail-jingeun" component={DetailJingeun} />

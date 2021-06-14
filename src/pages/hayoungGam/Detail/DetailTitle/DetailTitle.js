@@ -4,9 +4,10 @@ import './DetailTitle.scss';
 
 class DetailTitle extends Component {
   render() {
+    const { props } = this;
     return (
       <>
-        <h2 className="drink-category-title">콜드 브루</h2>
+        <h2 className="drink-category-title">{props.category}</h2>
         <nav className="breadcrumbs">
           <ul className="breadcrumbs__list">
             <li className="breadcrumbs__item">
@@ -26,10 +27,10 @@ class DetailTitle extends Component {
             </li>
             <li className="breadcrumbs__item">
               <Link className="breadcrumbs__link" to="/">
-                콜드 브루
+                {props.category}
               </Link>
             </li>
-            <li className="breadcrumbs__item">제주 유기농 말차로 만든 라떼</li>
+            <li className="breadcrumbs__item">{props.name}</li>
           </ul>
         </nav>
       </>

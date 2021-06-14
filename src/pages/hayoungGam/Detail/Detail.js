@@ -1,26 +1,25 @@
 import { Component } from 'react';
 import Header from 'components/hayoungGam/Header/Header';
 import Footer from 'components/hayoungGam/Footer/Footer';
-import DetailTitle from './DetailTitle/DetailTitle';
-import DrinkDetailImageViewer from './DrinkDetailImageViewer/DrinkDetailImageViewer';
-import DrinkInfo from './DrinkInfo/DrinkInfo';
-import DrinkReview from './DrinkReview/DrinkReview';
+import DetailContents from './DetailContents/DetailContents';
+import BEVERAGE_DATA from 'data/mockData';
 import './Detail.scss';
 
 class Detail extends Component {
   render() {
+    const {
+      match: {
+        params: { id },
+      },
+    } = this.props;
+
     return (
       <>
         <Header />
         <div className="container">
-          <DetailTitle />
-          <section className="drink-detail-area">
-            <DrinkDetailImageViewer />
-            <div className="drink-infos">
-              <DrinkInfo />
-              <DrinkReview />
-            </div>
-          </section>
+          {BEVERAGE_DATA.filter(data => data.id === parseInt(id)).map(drink => (
+            <DetailContents key={drink.id} {...drink} />
+          ))}
         </div>
         <Footer />
       </>
