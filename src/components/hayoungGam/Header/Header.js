@@ -13,16 +13,16 @@ class Header extends Component {
           <nav className="nav">
             <ul className="nav__list">
               <li className="nav__item">
-                <Link to="/list">coffee</Link>
+                <Link to="/list-hayoung">coffee</Link>
               </li>
               <li className="nav__item">
-                <Link to="/list">menu</Link>
+                <Link to="/list-hayoung">menu</Link>
               </li>
               <li className="nav__item">
-                <Link to="/list">store</Link>
+                <Link to="/list-hayoung">store</Link>
               </li>
               <li className="nav__item">
-                <Link to="/list">what's new</Link>
+                <Link to="/list-hayoung">what's new</Link>
               </li>
             </ul>
           </nav>
