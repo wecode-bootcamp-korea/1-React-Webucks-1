@@ -5,12 +5,6 @@ import './DrinkInfo.scss';
 class DrinkInfo extends Component {
   render() {
     const { props } = this;
-    console.log(props.allergic);
-    if (props.allergic) {
-      console.log('Fdsaf');
-    } else {
-      console.log('a');
-    }
     return (
       <>
         <div className="drink-name">
