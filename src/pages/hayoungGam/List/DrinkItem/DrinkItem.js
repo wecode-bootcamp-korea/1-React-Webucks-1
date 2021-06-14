@@ -1,6 +1,6 @@
 import { Component } from 'react';
 import { Link } from 'react-router-dom';
-import LikeBtn from 'components/LikeBtn/LikeBtn';
+import LikeBtn from 'components/hayoungGam/LikeBtn/LikeBtn';
 import './DrinkItem.scss';
 
 class DrinkItem extends Component {

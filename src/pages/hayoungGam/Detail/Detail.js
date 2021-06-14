@@ -1,6 +1,6 @@
 import { Component } from 'react';
-import Header from 'components/Header/Header';
-import Footer from 'components/Footer/Footer';
+import Header from 'components/hayoungGam/Header/Header';
+import Footer from 'components/hayoungGam/Footer/Footer';
 import DetailTitle from './DetailTitle/DetailTitle';
 import DrinkDetailImageViewer from './DrinkDetailImageViewer/DrinkDetailImageViewer';
 import DrinkInfo from './DrinkInfo/DrinkInfo';

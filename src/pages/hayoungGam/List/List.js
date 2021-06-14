@@ -1,6 +1,6 @@
 import { Component } from 'react';
-import Footer from 'components/Footer/Footer';
-import Header from 'components/Header/Header';
+import Header from 'components/hayoungGam/Header/Header';
+import Footer from 'components/hayoungGam/Footer/Footer';
 import DrinkSection from './DrinkSection/DrinkSection';
 import './List.scss';
 

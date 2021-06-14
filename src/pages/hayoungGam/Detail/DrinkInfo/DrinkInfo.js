@@ -1,5 +1,5 @@
 import { Component } from 'react';
-import LikeBtn from 'components/LikeBtn/LikeBtn';
+import LikeBtn from 'components/hayoungGam/LikeBtn/LikeBtn';
 import './DrinkInfo.scss';
 
 class DrinkInfo extends Component {
