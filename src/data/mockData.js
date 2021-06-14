@@ -28,7 +28,7 @@ const BEVERAGE_DATA = [
     sugars: 0,
     protein: 0,
     caffeine: 260,
-    allergic: 'None',
+    allergic: '',
   },
   {
     id: 3,
