@@ -1,0 +1,21 @@
+.loginBox {
+  position: relative;
+  margin: 30px auto 20px 0;
+  border: none;
+  text-align: center;
+}
+
+.loginBox {
+  display: inline-block;
+  width: 250px;
+  height: 50px;
+  padding: 15px;
+  border: 1px solid rgb(221, 221, 221);
+  border-radius: 3px;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+.loginId {
+  margin-bottom: 20px;
+}
