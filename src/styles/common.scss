@@ -1,16 +1,12 @@
 // Global
 @import 'reset';
 @import 'variables';
+@import 'placeholders';
 
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
 
-%flexCenter {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
+/* Common */
 html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
