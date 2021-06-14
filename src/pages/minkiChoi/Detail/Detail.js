@@ -1,4 +1,5 @@
 import { Component } from 'react';
+import HeartShape from './HeartShape/HeartShape';
 import './Detail.scss';
 
 class Detail extends Component {
@@ -55,9 +56,12 @@ class Detail extends Component {
                 <img src="./Images/minkiChoi/ringo.jpg" alt="/" />
               </div>
               <div className="productDetail">
-                <div className="productName">
-                  <h3>화이트 초콜릿 모카</h3>
-                  <h4>White Chocolate Mocha</h4>
+                <div className="productDetailContainer">
+                  <div className="productName">
+                    <h3>화이트 초콜릿 모카</h3>
+                    <h4>White Chocolate Mocha</h4>
+                  </div>
+                  <HeartShape />
                 </div>
                 <div className="productDescription">
                   <p>

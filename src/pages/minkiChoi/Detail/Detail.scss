@@ -76,6 +76,19 @@
     margin-right: 30px;
   }
 
+  .productDetailContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .heart {
+    padding-top: 2px;
+  }
+
+  .heartActive {
+    color: red;
+  }
+
   .productName h3 {
     font-size: 20px;
     font-weight: bold;
@@ -88,7 +101,6 @@
 
   .productName {
     margin-bottom: 20px;
-    border-bottom: 2px solid #121212;
   }
 
   .productDescription {
@@ -98,7 +110,9 @@
   }
 
   .productDescription p {
+    padding-top: 20px;
     line-height: 130%;
+    border-top: 2px solid #121212;
   }
 
   .productInfoDetail {
