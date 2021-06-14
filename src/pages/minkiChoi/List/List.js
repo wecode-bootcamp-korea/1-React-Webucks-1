@@ -7,14 +7,14 @@ class List extends Component {
       <div className="List">
         <div className="container">
           <nav className="navi">
-            <a className="naviTitle" href="">
+            <a className="naviTitle" href="/">
               Webucks
             </a>
             <div className="naviMenu">
-              <a href="">COFFEE</a>
-              <a href="">MENU</a>
-              <a href="">STORE</a>
-              <a href="">WHAT'S NEW</a>
+              <a href="/">COFFEE</a>
+              <a href="/">MENU</a>
+              <a href="/">STORE</a>
+              <a href="/">WHAT'S NEW</a>
             </div>
           </nav>
           <header className="menuIntro">
@@ -26,61 +26,61 @@ class List extends Component {
           </header>
           <section className="menuImage">
             <div>
-              <a href="">
+              <a href="/">
                 <img src="./Images/minkiChoi/ringo.jpg" alt="" />
               </a>
               <div className="shopProductName">ddd</div>
             </div>
             <div>
-              <a href="">
+              <a href="/">
                 <img src="./Images/minkiChoi/vetty.jpg" alt="" />
               </a>
               <div className="shopProductName">ddd</div>
             </div>
             <div>
-              <a href="">
+              <a href="/">
                 <img src="./Images/minkiChoi/deva.jpg" alt="" />
               </a>
               <div className="shopProductName">ddd</div>
             </div>
             <div>
-              <a href="">
+              <a href="/">
                 <img src="./Images/minkiChoi/glory.jpg" alt="" />
               </a>
               <div className="shopProductName">ddd</div>
             </div>
             <div>
-              <a href="">
+              <a href="/">
                 <img src="./Images/minkiChoi/liny.jpg" alt="" />
               </a>
               <div className="shopProductName">ddd</div>
             </div>
             <div>
-              <a href="">
+              <a href="/">
                 <img src="./Images/minkiChoi/malo.jpg" alt="" />
               </a>
               <div className="shopProductName">ddd</div>
             </div>
             <div>
-              <a href="">
+              <a href="/">
                 <img src="./Images/minkiChoi/plain.jpg" alt="" />
               </a>
               <div className="shopProductName">ddd</div>
             </div>
             <div>
-              <a href="">
+              <a href="/">
                 <img src="./Images/minkiChoi/walter.jpg" alt="" />
               </a>
               <div className="shopProductName">ddd</div>
             </div>
             <div>
-              <a href="">
+              <a href="/">
                 <img src="./Images/minkiChoi/breanna.jpg" alt="" />
               </a>
               <div className="shopProductName">ddd</div>
             </div>
             <div>
-              <a href="">
+              <a href="/">
                 <img src="./Images/minkiChoi/cecil.jpg" alt="" />
               </a>
               <div className="shopProductName">ddd</div>
@@ -94,13 +94,13 @@ class List extends Component {
             </p>
           </header>
           <section className="menuImage">
-            <a href="">
+            <a href="/">
               <div className="wrapper">
                 <img src="./Images/minkiChoi/ryo.jpg" alt="" />
               </div>
               <div className="shopProductName">ddd</div>
             </a>
-            <a href="">
+            <a href="/">
               <div className="wrapper">
                 <img src="./Images/minkiChoi/duncan.jpg" alt="" />
               </div>
