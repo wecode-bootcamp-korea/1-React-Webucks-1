@@ -1,0 +1,54 @@
+/* Header.js */
+@import 'styles/variables';
+
+.header {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  padding: 0 20px;
+  top: 0;
+  border-bottom: 1px solid $grey-200;
+  background: $beige-100;
+  z-index: 999;
+
+  & .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0;
+  }
+
+  & .logo {
+    display: flex;
+    flex: none;
+    font-size: $font-xxlarge;
+  }
+
+  & .nav {
+    &__list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__item {
+      flex: 1 1 auto;
+      margin: 0 15px;
+      color: $grey-700;
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      transition: 0.1s ease-in-out;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &:hover {
+        color: $green-primary-color;
+      }
+    }
+  }
+}
