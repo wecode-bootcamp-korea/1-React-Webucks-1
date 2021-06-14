@@ -1,6 +1,5 @@
 import { Component } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHeart as farHeart } from '@fortawesome/free-regular-svg-icons';
+import LikeBtn from 'components/hayoungGam/LikeBtn/LikeBtn';
 import './DrinkReviewComment.scss';
 
 class DrinkReview extends Component {
@@ -12,7 +11,7 @@ class DrinkReview extends Component {
           {props.userId}
         </span>
         <p className="drink-review__comment__content">{props.comment}</p>
-        <FontAwesomeIcon icon={farHeart} />
+        <LikeBtn />
         <button
           className="drink-review__comment__remove-btn"
           onClick={this.props.removeReviews}
