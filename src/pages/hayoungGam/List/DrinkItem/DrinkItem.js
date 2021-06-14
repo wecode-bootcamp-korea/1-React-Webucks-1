@@ -1,7 +1,6 @@
 import { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHeart as farHeart } from '@fortawesome/free-regular-svg-icons';
+import LikeBtn from 'components/LikeBtn/LikeBtn';
 import './DrinkItem.scss';
 
 class DrinkItem extends Component {
@@ -19,7 +18,7 @@ class DrinkItem extends Component {
           <p className="drinks__item__name__text">
             제주 유기농 말차로 만든 라떼
           </p>
-          <FontAwesomeIcon icon={farHeart} />
+          <LikeBtn />
         </div>
       </div>
     );
