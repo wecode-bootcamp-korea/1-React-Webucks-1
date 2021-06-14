@@ -47,7 +47,6 @@ class DrinkReview extends Component {
 
   render() {
     const { reviews } = this.state;
-    console.log(reviews);
     return (
       <div className="drink-review">
         <h4 className="drink-review__title">리뷰</h4>
