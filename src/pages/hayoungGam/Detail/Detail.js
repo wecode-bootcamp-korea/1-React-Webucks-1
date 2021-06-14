@@ -2,7 +2,7 @@ import { Component } from 'react';
 import Header from 'components/hayoungGam/Header/Header';
 import Footer from 'components/hayoungGam/Footer/Footer';
 import DetailContents from './DetailContents/DetailContents';
-import BEVERAGE_DATA from 'data/mockData';
+import BEVERAGE_DATA from 'data/hayoungGam/mockData';
 import './Detail.scss';
 
 class Detail extends Component {
