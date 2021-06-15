@@ -13,9 +13,9 @@ class Login extends Component {
           />
           <input type="password" className="input_PW" placeholder="password" />
           <button className="login_btn" LogIn />
-          <div className="login_forgot">
+          <p className="login_forgot">
             <a href="a">Forgot password? </a>
-          </div>
+          </p>
         </div>
       </>
     );
