@@ -20,16 +20,8 @@ class DrinkReview extends Component {
 
   saveInputValue = event => {
     event.preventDefault();
-    const {
-      target: {
-        reviewerId: { value: userId },
-      },
-    } = event;
-    const {
-      target: {
-        reviewComment: { value: comment },
-      },
-    } = event;
+    const userId = event.target.reviewerId.value;
+    const comment = event.target.reviewComment.value;
 
     if (!userId) {
       alert('ID를 입력해주세요🙂');
