@@ -4,17 +4,15 @@ import './DrinkReviewComment.scss';
 
 class DrinkReview extends Component {
   render() {
-    const { props } = this;
+    const { id, userId, comment, removeReviews } = this.props;
     return (
-      <li className="drink-review__comment" id={props.id}>
-        <span className="drink-review__comment__reviewer-id">
-          {props.userId}
-        </span>
-        <p className="drink-review__comment__content">{props.comment}</p>
+      <li className="drink-review__comment" id={id}>
+        <span className="drink-review__comment__reviewer-id">{userId}</span>
+        <p className="drink-review__comment__content">{comment}</p>
         <LikeBtn />
         <button
           className="drink-review__comment__remove-btn"
-          onClick={this.props.removeReviews}
+          onClick={removeReviews}
         >
           ❌
         </button>

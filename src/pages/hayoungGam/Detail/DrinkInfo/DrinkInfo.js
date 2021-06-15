@@ -4,17 +4,28 @@ import './DrinkInfo.scss';
 
 class DrinkInfo extends Component {
   render() {
-    const { props } = this;
+    const {
+      name,
+      eng_name,
+      description,
+      kcal,
+      fat,
+      protein,
+      sodium,
+      sugars,
+      caffeine,
+      allergic,
+    } = this.props;
     return (
       <>
         <div className="drink-name">
-          <h3 className="drink-name__text">{props.name}</h3>
-          <p className="drink-name__eng-text">{props.eng_name}</p>
+          <h3 className="drink-name__text">{name}</h3>
+          <p className="drink-name__eng-text">{eng_name}</p>
           <div className="drink-like-btn">
             <LikeBtn />
           </div>
         </div>
-        <p className="drink-desc">{props.description}</p>
+        <p className="drink-desc">{description}</p>
         <div className="drink-nutrition">
           <div className="drink-nutrition__summary">
             <p>제품 영양 정보</p>
@@ -25,19 +36,19 @@ class DrinkInfo extends Component {
               <li className="drink-nutrition__table__row">
                 <dl className="drink-nutrition__table__desc-list">
                   <dt>1회 제공량 (kcal)</dt>
-                  <dd>{props.kcal}</dd>
+                  <dd>{kcal}</dd>
                 </dl>
               </li>
               <li className="drink-nutrition__table__row">
                 <dl className="drink-nutrition__table__desc-list">
                   <dt>포화지방 (g)</dt>
-                  <dd>{props.fat}</dd>
+                  <dd>{fat}</dd>
                 </dl>
               </li>
               <li className="drink-nutrition__table__row">
                 <dl className="drink-nutrition__table__desc-list">
                   <dt>단백질 (g)</dt>
-                  <dd>{props.protein}</dd>
+                  <dd>{protein}</dd>
                 </dl>
               </li>
             </ul>
@@ -45,27 +56,27 @@ class DrinkInfo extends Component {
               <li className="drink-nutrition__table__row">
                 <dl className="drink-nutrition__table__desc-list">
                   <dt>나트륨 (mg)</dt>
-                  <dd>{props.sodium}</dd>
+                  <dd>{sodium}</dd>
                 </dl>
               </li>
               <li className="drink-nutrition__table__row">
                 <dl className="drink-nutrition__table__desc-list">
                   <dt>당류 (g)</dt>
-                  <dd>{props.sugars}</dd>
+                  <dd>{sugars}</dd>
                 </dl>
               </li>
               <li className="drink-nutrition__table__row">
                 <dl className="drink-nutrition__table__desc-list">
                   <dt>카페인 (mg)</dt>
-                  <dd>{props.caffeine}</dd>
+                  <dd>{caffeine}</dd>
                 </dl>
               </li>
             </ul>
           </div>
         </div>
-        {props.allergic && (
+        {allergic && (
           <div className="drink-allergic-info">
-            <p>알레르기 유발 요인 : {props.allergic}</p>
+            <p>알레르기 유발 요인 : {allergic}</p>
           </div>
         )}
       </>

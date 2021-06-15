@@ -7,14 +7,14 @@ import './DetailContents.scss';
 
 class DetailContents extends Component {
   render() {
-    const { props } = this;
+    const { category, name, img } = this.props;
     return (
       <>
-        <DetailTitle category={props.category} name={props.name} />
+        <DetailTitle category={category} name={name} />
         <section className="drink-detail-area">
-          <DrinkDetailImageViewer name={props.name} img={props.img} />
+          <DrinkDetailImageViewer name={name} img={img} />
           <div className="drink-infos">
-            <DrinkInfo {...props} />
+            <DrinkInfo {...this.props} />
             <DrinkReview />
           </div>
         </section>
