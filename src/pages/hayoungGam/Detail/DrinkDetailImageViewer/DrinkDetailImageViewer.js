@@ -3,10 +3,10 @@ import './DrinkDetailImageViewer.scss';
 
 class DrinkDetailImageViewer extends Component {
   render() {
-    const { props } = this;
+    const { name, img } = this.props;
     return (
       <div className="drink-img">
-        <img className="drink-img__file" alt={props.name} src={props.img} />
+        <img className="drink-img__file" alt={name} src={img} />
       </div>
     );
   }
