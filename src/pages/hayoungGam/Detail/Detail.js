@@ -1,6 +1,5 @@
 import { Component } from 'react';
-import Header from 'components/hayoungGam/Header/Header';
-import Footer from 'components/hayoungGam/Footer/Footer';
+import Container from 'components/hayoungGam/Container/Container';
 import DetailContents from './DetailContents/DetailContents';
 import BEVERAGE_DATA from 'data/hayoungGam/mockData';
 import './Detail.scss';
@@ -15,13 +14,11 @@ class Detail extends Component {
 
     return (
       <>
-        <Header />
-        <div className="container">
+        <Container>
           {BEVERAGE_DATA.filter(data => data.id === parseInt(id)).map(drink => (
             <DetailContents key={drink.id} {...drink} />
           ))}
-        </div>
-        <Footer />
+        </Container>
       </>
     );
   }
