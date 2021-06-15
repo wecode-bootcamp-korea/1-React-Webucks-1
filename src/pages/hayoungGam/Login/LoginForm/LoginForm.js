@@ -6,10 +6,8 @@ class LoginForm extends Component {
   constructor() {
     super();
     this.state = {
-      idValue: '',
-      pwValue: '',
-      idInputClassName: 'login-form__input',
-      pwInputClassName: 'login-form__input',
+      id: '',
+      password: '',
     };
   }
 
@@ -17,57 +15,38 @@ class LoginForm extends Component {
     this.props.history.push('/list-hayoung');
   };
 
-  handleIdInput = event => {
-    this.setState({ idValue: event.target.value }, () => {
-      this.state.idValue.includes('@')
-        ? this.setState({
-            idInputClassName: 'login-form__input active',
-          })
-        : this.setState({
-            idInputClassName: 'login-form__input',
-          });
-    });
-  };
-
-  handlePwInput = event => {
-    const PASSWORD_MIN_LENGTH = 5;
-    this.setState({ pwValue: event.target.value }, () => {
-      this.state.pwValue.length >= PASSWORD_MIN_LENGTH
-        ? this.setState({
-            pwInputClassName: 'login-form__input active',
-          })
-        : this.setState({
-            pwInputClassName: 'login-form__input',
-          });
-    });
+  handleInput = event => {
+    this.setState({ [event.target.name]: event.target.value });
   };
 
   render() {
-    const { idInputClassName } = this.state;
-    const { pwInputClassName } = this.state;
+    const { id, password, error } = this.state;
     return (
       <form className="login-form">
         <input
-          className={idInputClassName}
+          className={
+            id.includes('@') ? 'login-form__input active' : 'login-form__input'
+          }
+          name="id"
           type="text"
           placeholder="전화번호, 사용자 이름 또는 이메일"
-          onChange={this.handleIdInput}
+          onChange={this.handleInput}
         />
         <input
-          className={pwInputClassName}
+          className={
+            password.length >= 5
+              ? 'login-form__input active'
+              : 'login-form__input'
+          }
+          name="password"
           type="password"
           placeholder="비밀번호"
-          onChange={this.handlePwInput}
+          onChange={this.handleInput}
         />
         <button
           className="login-form__btn"
           onClick={this.goToList}
-          disabled={
-            !(
-              idInputClassName === 'login-form__input active' &&
-              pwInputClassName === 'login-form__input active'
-            )
-          }
+          disabled={!(id.includes('@') && password.length >= 5)}
         >
           로그인
         </button>
