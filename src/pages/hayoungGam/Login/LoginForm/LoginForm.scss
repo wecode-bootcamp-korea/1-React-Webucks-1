@@ -21,6 +21,13 @@
     }
   }
 
+  &__error {
+    margin-bottom: 30px;
+    color: $red-color;
+    font-size: $font-medium;
+    text-align: center;
+  }
+
   &__btn {
     display: block;
     width: 100%;
