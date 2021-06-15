@@ -158,3 +158,31 @@ export const FOOTER_DATA = [
     links: [],
   },
 ];
+
+export const BREADCRUMBS_DATA = [
+  {
+    id: 1,
+    link_name: '홈',
+    link_url: '/',
+  },
+  {
+    id: 2,
+    link_name: 'menu',
+    link_url: '/list-hayoung',
+  },
+  {
+    id: 3,
+    link_name: '음료',
+    link_url: '/list-hayoung',
+  },
+  {
+    id: 4,
+    link_name: 'category',
+    link_url: '/list-hayoung',
+  },
+  {
+    id: 5,
+    link_name: 'productName',
+    link_url: '',
+  },
+];
