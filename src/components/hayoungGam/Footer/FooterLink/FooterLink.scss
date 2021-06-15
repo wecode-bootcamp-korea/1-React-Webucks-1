@@ -1,0 +1,9 @@
+/* FooterLink.js */
+@import 'styles/variables';
+@import 'styles/mixins';
+
+.footer-menu {
+  &__link:hover {
+    text-decoration: underline;
+  }
+}

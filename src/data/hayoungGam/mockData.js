@@ -1,4 +1,4 @@
-const BEVERAGE_DATA = [
+export const BEVERAGE_DATA = [
   {
     id: 1,
     category: '티',
@@ -111,4 +111,50 @@ const BEVERAGE_DATA = [
   },
 ];
 
-export default BEVERAGE_DATA;
+export const FOOTER_DATA = [
+  {
+    id: 1,
+    category: 'company',
+    links: [
+      { id: 1, link_name: '한눈에 보기' },
+      { id: 2, link_name: '스타벅스 사명' },
+      { id: 3, link_name: '스타벅스 소개' },
+      { id: 4, link_name: '국내 뉴스룸' },
+      { id: 5, link_name: '세계의 스타벅스' },
+      { id: 6, link_name: '글로벌 뉴스룸' },
+    ],
+  },
+  {
+    id: 2,
+    category: 'corporate sales',
+    links: [{ id: 1, link_name: '단체 및 기업 구매 안내' }],
+  },
+  {
+    id: 3,
+    category: 'partnership',
+    links: [{ id: 1, link_name: '협력 고객사 등록신청' }],
+  },
+  {
+    id: 4,
+    category: 'online community',
+    links: [
+      { id: 1, link_name: '페이스북' },
+      { id: 2, link_name: '트위터' },
+      { id: 3, link_name: '유튜브' },
+      { id: 4, link_name: '인스타그램' },
+    ],
+  },
+  {
+    id: 5,
+    category: 'recruit',
+    links: [
+      { id: 1, link_name: '채용 소개' },
+      { id: 2, link_name: '채용 지원하기' },
+    ],
+  },
+  {
+    id: 6,
+    category: 'webucks',
+    links: [],
+  },
+];
