@@ -1,6 +1,6 @@
 /* DrinkItem.js */
 @import 'styles/variables';
-@import 'styles/placeholders';
+@import 'styles/mixins';
 
 .drinks__item {
   %img {
@@ -34,7 +34,7 @@
   }
 
   &__name {
-    @extend %flexCenter;
+    @include flex(center, center);
 
     &__text {
       margin-right: 10px;

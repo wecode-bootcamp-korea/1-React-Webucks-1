@@ -1,6 +1,6 @@
 /* Footer.js */
 @import 'styles/variables';
-@import 'styles/placeholders';
+@import 'styles/mixins';
 
 .footer {
   width: 100%;
@@ -8,7 +8,7 @@
   background: $black-secondary-color;
 
   & .container {
-    @extend %flexBetween;
+    @include flex(space-between, normal);
     padding: 40px 0;
   }
 }

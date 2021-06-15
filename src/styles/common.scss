@@ -1,7 +1,7 @@
 // Global
 @import 'reset';
 @import 'variables';
-@import 'placeholders';
+@import 'mixins';
 
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
@@ -23,7 +23,7 @@ body {
   padding: 80px 0 100px;
 
   &--login {
-    @extend %flexCenter;
+    @include flex(center, center);
     min-height: 100vh;
     background: $grey-100;
   }

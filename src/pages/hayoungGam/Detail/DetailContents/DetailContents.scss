@@ -1,9 +1,9 @@
 /* DetailContents.js */
 @import 'styles/variables';
-@import 'styles/placeholders';
+@import 'styles/mixins';
 
 .drink-detail-area {
-  @extend %flexBetween;
+  @include flex(space-between, normal);
   gap: 0 40px;
 }
 
