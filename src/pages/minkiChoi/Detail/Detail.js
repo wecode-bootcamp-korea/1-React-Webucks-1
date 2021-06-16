@@ -1,5 +1,6 @@
 import { Component } from 'react';
 import HeartShape from './HeartShape/HeartShape';
+import Comment from './Comment/Comment';
 import './Detail.scss';
 
 class Detail extends Component {
@@ -123,14 +124,7 @@ class Detail extends Component {
                   <div className="review">
                     <p>리뷰</p>
                   </div>
-                  <div className="inputReview">
-                    <input
-                      type="text"
-                      name=""
-                      id=""
-                      placeholder="리뷰를 입력해주세요."
-                    />
-                  </div>
+                  <Comment />
                 </div>
               </div>
             </div>
