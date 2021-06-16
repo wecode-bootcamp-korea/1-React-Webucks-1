@@ -1,5 +1,6 @@
 import { Component } from 'react';
 import { withRouter } from 'react-router-dom';
+import { LOGIN_PAGE_PATHNAME } from 'pathnames';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import './Container.scss';
@@ -12,15 +13,15 @@ class Container extends Component {
     } = this.props;
     return (
       <>
-        {!(pathname === '/login-hayoung') && <Header />}
+        {!(pathname === LOGIN_PAGE_PATHNAME) && <Header />}
         <div
           className={
-            pathname === '/login-hayoung' ? 'container--login' : 'container'
+            pathname === LOGIN_PAGE_PATHNAME ? 'container--login' : 'container'
           }
         >
           {children}
         </div>
-        {!(pathname === '/login-hayoung') && <Footer />}
+        {!(pathname === LOGIN_PAGE_PATHNAME) && <Footer />}
       </>
     );
   }
