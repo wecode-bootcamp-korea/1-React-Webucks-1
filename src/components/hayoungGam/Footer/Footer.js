@@ -1,6 +1,6 @@
 import { Component } from 'react';
 import FooterMenu from './FooterMenu/FooterMenu';
-import getData from 'fetch';
+import getData from 'utils/fetch';
 import './Footer.scss';
 
 class Footer extends Component {

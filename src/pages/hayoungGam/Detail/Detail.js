@@ -1,7 +1,7 @@
 import { Component } from 'react';
 import Container from 'components/hayoungGam/Container/Container';
 import DetailContents from './DetailContents/DetailContents';
-import getData from 'fetch';
+import getData from 'utils/fetch';
 import './Detail.scss';
 
 class Detail extends Component {

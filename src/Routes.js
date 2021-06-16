@@ -1,6 +1,6 @@
 import { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { pathnames } from 'pathnames';
+import { pathnames } from 'utils/pathnames';
 
 // 송미 컴포넌트
 import ListSongmi from 'pages/songmiOh/List/List';

@@ -1,5 +1,5 @@
 import { Component } from 'react';
-import getData from 'fetch';
+import getData from 'utils/fetch';
 import BreadcrumbLink from '../BreadcrumbLink/BreadcrumbLink';
 import './DetailTitle.scss';
 

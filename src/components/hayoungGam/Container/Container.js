@@ -1,6 +1,6 @@
 import { Component } from 'react';
 import { withRouter } from 'react-router-dom';
-import { pathnames } from 'pathnames';
+import { pathnames } from 'utils/pathnames';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import './Container.scss';
