@@ -1,23 +1,37 @@
 import { Component } from 'react';
 import Container from 'components/hayoungGam/Container/Container';
 import DetailContents from './DetailContents/DetailContents';
-import BEVERAGE_DATA from 'data/hayoungGam/mockData';
+import getData from 'fetch';
 import './Detail.scss';
 
 class Detail extends Component {
+  constructor() {
+    super();
+    this.state = {
+      beverages: [],
+    };
+  }
+
+  async componentDidMount() {
+    let { beverages } = await getData();
+    this.setState({ beverages });
+  }
+
   render() {
+    const { beverages } = this.state;
     const {
       match: {
         params: { id },
       },
     } = this.props;
-
     return (
       <>
         <Container>
-          {BEVERAGE_DATA.filter(data => data.id === parseInt(id)).map(drink => (
-            <DetailContents key={drink.id} {...drink} />
-          ))}
+          {beverages
+            .filter(data => data.id === parseInt(id))
+            .map(drink => (
+              <DetailContents key={drink.id} {...drink} />
+            ))}
         </Container>
       </>
     );
