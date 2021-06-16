@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
-import LoginBox from './LoginBox';
+import LoginBox from './LoginForm';
 import './Login.scss';
+import LoginForm from './LoginForm';
 
 class Login extends Component {
   render() {
     return (
       <body class="container">
         <header class="title">Wecafevin</header>
-        <LoginBox />
+        <LoginForm />
         <button className="loginBt" type="button">
           로그인
         </button>

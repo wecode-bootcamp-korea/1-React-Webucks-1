@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import './LoginBox.scss';
+import './LoginForm.scss';
 
-class LoginBox extends Component {
+class LoginForm extends Component {
   render() {
     return (
       <form className="loginBox">
@@ -17,4 +17,4 @@ class LoginBox extends Component {
   }
 }
 
-export default LoginBox;
+export default LoginForm;

@@ -1,0 +1,19 @@
+.menuImage {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 5px;
+  width: 950px;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+}
+
+.productName {
+  margin-top: 15px;
+  color: rgb(0, 0, 0);
+}
+
+.menuImage div {
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+}
