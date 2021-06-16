@@ -91,7 +91,7 @@ class Detail extends Component {
                 </div>
               </div>
               <div className="알러지">
-                <P>알레르기 유발 요인: 우유</P>
+                <p>알레르기 유발 요인: 우유</p>
               </div>
               <div className="리뷰">리뷰</div>
             </div>

@@ -26,16 +26,7 @@ class Routes extends Component {
     return (
       <Router>
         <Switch>
-          <Route exact path="/login-minki" component={LoginMinki} />
-          <Route exact path="/list-minki" component={ListMinki} />
-          <Route exact path="/detail-minki" component={DetailMinki} />
-          <Route exact path="/login-songmi" component={LoginSongmi} />
-          <Route exact path="/list-songmi" component={ListSongmi} />
-          <Route exact path="/detail-songmi" component={DetailSongmi} />
-          <Route exact path="/login-hayoung" component={LoginHayoung} />
-          <Route exact path="/list-hayoung" component={ListHayoung} />
-          <Route exact path="/detail-hayoung" component={DetailHayoung} />
-          <Route exact path="/login-jingeun" component={LoginJingeun} />
+          <Route exact path="" component={LoginJingeun} />
           <Route exact path="/list-jingeun" component={ListJingeun} />
           <Route exact path="/detail-jingeun" component={DetailJingeun} />
         </Switch>
