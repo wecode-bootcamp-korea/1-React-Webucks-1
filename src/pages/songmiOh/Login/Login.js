@@ -7,7 +7,10 @@ class Login extends Component {
     return (
       <body class="container">
         <header class="title">Wecafevin</header>
-        <button className="loginBt" type="button" 로그인></button>
+        <LoginBox />
+        <button className="loginBt" type="button">
+          로그인
+        </button>
         <footer className="forgotPw">
           <a
             className="pwLink"
