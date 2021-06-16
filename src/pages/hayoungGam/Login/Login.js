@@ -1,18 +1,12 @@
 import { Component } from 'react';
+import Container from 'components/hayoungGam/Container/Container';
 import LoginForm from './LoginForm/LoginForm';
 import './Login.scss';
 
 class Login extends Component {
   render() {
-    const {
-      location: { pathname },
-    } = this.props;
     return (
-      <div
-        className={
-          pathname === '/login-hayoung' ? 'container--login' : 'container'
-        }
-      >
+      <Container>
         <div className="login-box">
           <h1 className="logo">Starbugs</h1>
           <LoginForm />
@@ -25,7 +19,7 @@ class Login extends Component {
             비밀번호를 잊으셨나요?
           </a>
         </div>
-      </div>
+      </Container>
     );
   }
 }
