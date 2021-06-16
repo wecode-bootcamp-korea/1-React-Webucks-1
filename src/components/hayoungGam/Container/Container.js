@@ -8,6 +8,7 @@ class Container extends Component {
   render() {
     const {
       location: { pathname },
+      children,
     } = this.props;
     return (
       <>
@@ -17,7 +18,7 @@ class Container extends Component {
             pathname === '/login-hayoung' ? 'container--login' : 'container'
           }
         >
-          {this.props.children}
+          {children}
         </div>
         {!(pathname === '/login-hayoung') && <Footer />}
       </>
