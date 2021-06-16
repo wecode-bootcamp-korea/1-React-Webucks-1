@@ -1,8 +1,9 @@
 import { Component } from 'react';
+import './Detail.scss';
 
 class Detail extends Component {
   render() {
-    return <p>Detail songmipage</p>;
+    return <div className="detailMenu"></div>;
   }
 }
 
