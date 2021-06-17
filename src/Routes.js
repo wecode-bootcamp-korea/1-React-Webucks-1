@@ -24,7 +24,7 @@ import DetailJingeun from 'pages/jingeunAhn/Detail/Detail';
 
 class Routes extends Component {
   render() {
-    const { loginUrl, listUrl, detailUrl } = PATH;
+    const { login, list, detail } = PATH;
     return (
       <Router>
         <Switch>
@@ -34,9 +34,9 @@ class Routes extends Component {
           <Route exact path="/login-songmi" component={LoginSongmi} />
           <Route exact path="/list-songmi" component={ListSongmi} />
           <Route exact path="/detail-songmi" component={DetailSongmi} />
-          <Route exact path={loginUrl} component={LoginHayoung} />
-          <Route exact path={listUrl} component={ListHayoung} />
-          <Route exact path={`${detailUrl}/:id`} component={DetailHayoung} />
+          <Route exact path={login} component={LoginHayoung} />
+          <Route exact path={list} component={ListHayoung} />
+          <Route exact path={`${detail}/:id`} component={DetailHayoung} />
           <Route exact path="/login-jingeun" component={LoginJingeun} />
           <Route exact path="/list-jingeun" component={ListJingeun} />
           <Route exact path="/detail-jingeun" component={DetailJingeun} />

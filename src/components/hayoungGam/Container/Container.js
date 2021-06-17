@@ -11,16 +11,14 @@ class Container extends Component {
       location: { pathname },
       children,
     } = this.props;
-    const { loginUrl } = PATH;
+    const { login } = PATH;
     return (
       <>
-        {!(pathname === loginUrl) && <Header />}
-        <div
-          className={pathname === loginUrl ? 'container--login' : 'container'}
-        >
+        {!(pathname === login) && <Header />}
+        <div className={pathname === login ? 'container--login' : 'container'}>
           {children}
         </div>
-        {!(pathname === loginUrl) && <Footer />}
+        {!(pathname === login) && <Footer />}
       </>
     );
   }

@@ -1,5 +1,5 @@
 export const PATH = {
-  loginUrl: '/login-hayoung',
-  listUrl: '/list-hayoung',
-  detailUrl: '/detail-hayoung',
+  login: '/login-hayoung',
+  list: '/list-hayoung',
+  detail: '/detail-hayoung',
 };
