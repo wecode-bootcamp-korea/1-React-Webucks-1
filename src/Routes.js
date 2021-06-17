@@ -1,6 +1,6 @@
 import { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { pathnames } from 'utils/pathnames';
+import { PATH } from 'utils/pathnames';
 
 // 송미 컴포넌트
 import ListSongmi from 'pages/songmiOh/List/List';
@@ -24,7 +24,7 @@ import DetailJingeun from 'pages/jingeunAhn/Detail/Detail';
 
 class Routes extends Component {
   render() {
-    const { loginUrl, listUrl, detailUrl } = pathnames;
+    const { loginUrl, listUrl, detailUrl } = PATH;
     return (
       <Router>
         <Switch>
