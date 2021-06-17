@@ -1,5 +1,6 @@
 import { Component } from 'react';
 import { withRouter } from 'react-router';
+import { validatePw, validateId } from 'utils/validator';
 import './LoginForm.scss';
 
 class LoginForm extends Component {
@@ -18,73 +19,25 @@ class LoginForm extends Component {
     this.props.history.push('/list-hayoung');
   };
 
-  validateId = () => {
-    const { id } = this.state;
-    let idStatus = false;
-    let error;
-    const emailRegex =
-      /^[\w+-]+(.[\w+-]+)*@([a-zA-Z0-9][a-zA-Z0-9-]*[a-zA-Z0-9]*\.)+[a-zA-Z]{2,}$/g;
-
-    if (!emailRegex.test(id)) {
-      error = '올바른 이메일을 입력해 주세요.';
+  validateInput = () => {
+    const newPwState = validatePw(this.state);
+    if (newPwState.pwStatus) {
+      const newIdState = validateId(this.state);
+      this.setState({
+        ...this.state,
+        ...newIdState,
+        pwStatus: newPwState.pwStatus, // pwStatus에 true를 저장
+      });
     } else {
-      error = '';
-      idStatus = true;
-    }
-
-    this.setState({
-      error,
-      idStatus,
-    });
-  };
-
-  validatePw = () => {
-    const { pw } = this.state;
-    let pwStatus = false;
-    let error;
-    const lowerCaseRegex = /[a-z]/g;
-    const upperCaseRegex = /[A-Z]/g;
-    const digitRegex = /\d/g;
-    const specialCharcsRegex = /[ `!@#$%^&*()_+\-=[\]{};':"\\|,.<>/?~]/g;
-    const minLengthRegex = /^.{8,}$/g;
-
-    switch (false) {
-      case !(pw === ''):
-        error = '';
-        break;
-      case lowerCaseRegex.test(pw):
-        error = '비밀번호는 영어 소문자를 포함해야 합니다.';
-        break;
-      case upperCaseRegex.test(pw):
-        error = '비밀번호는 영어 대문자를 포함해야 합니다.';
-        break;
-      case specialCharcsRegex.test(pw):
-        error = '비밀번호는 특수 문자를 포함해야 합니다.';
-        break;
-      case digitRegex.test(pw):
-        error = '비밀번호는 숫자를 포함해야 합니다.';
-        break;
-      case minLengthRegex.test(pw):
-        error = '비밀번호는 8자리 이상입니다.';
-        break;
-      default:
-        error = '';
-        pwStatus = true;
-        break;
-    }
-
-    this.setState({
-      error,
-      pwStatus,
-    });
-
-    if (pwStatus) {
-      this.validateId();
+      this.setState({ ...this.state, ...newPwState });
     }
   };
 
   handleInput = event => {
-    this.setState({ [event.target.name]: event.target.value }, this.validatePw);
+    this.setState(
+      { [event.target.name]: event.target.value },
+      this.validateInput
+    );
   };
 
   render() {
