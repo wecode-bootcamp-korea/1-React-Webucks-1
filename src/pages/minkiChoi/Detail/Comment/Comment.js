@@ -37,8 +37,6 @@ class Comment extends Component {
       this.add();
       event.target.value = '';
     }
-    // console.log('이거 머지?', this.add());
-    // 콘솔을 찍을 때는 '코멘트'가 두 개 찍히는데 콘솔을 지우니 하나만 찍히는 현상.
   };
 
   render() {

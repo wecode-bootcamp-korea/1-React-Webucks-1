@@ -21,12 +21,12 @@ class HeartShape extends Component {
   render() {
     return (
       <div
-        className={this.state.isActive ? 'heart heartActive' : 'heart'}
+        className={this.state.isActive ? 'heartActive' : ''}
         onClick={this.Active}
       >
         <FontAwesomeIcon
           icon={this.state.isActive ? faHeartSolid : faHeartRegular}
-          size="2x"
+          size="1x"
         />
       </div>
     );

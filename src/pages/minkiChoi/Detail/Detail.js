@@ -124,7 +124,9 @@ class Detail extends Component {
                   <div className="review">
                     <p>리뷰</p>
                   </div>
-                  <Comment />
+                  <div className="inputReview">
+                    <Comment />
+                  </div>
                 </div>
               </div>
             </div>

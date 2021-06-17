@@ -58,41 +58,12 @@
     text-align: right;
   }
 
-  .menuImage {
+  .coffeeCard {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-bottom: 20px;
     width: 1000px;
     text-align: center;
     background-color: transparent;
-  }
-
-  a {
-    text-align: center;
-    text-decoration: none;
-  }
-
-  .menuImage a .shopProductName {
-    margin-bottom: 10px;
-  }
-
-  .shopProductName {
-    color: #121212;
-  }
-
-  .menuImage a img {
-    width: 230px;
-    height: 230px;
-  }
-
-  .menuImage div a {
-    width: 230px;
-    height: 230px;
-    overflow: hidden;
-  }
-
-  .menuImage div img:hover {
-    transform: scale(1.1);
-    transition: 0.5s;
   }
 }
