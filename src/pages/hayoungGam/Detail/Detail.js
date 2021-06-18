@@ -13,8 +13,12 @@ class Detail extends Component {
   }
 
   async componentDidMount() {
-    let { beverages } = await getData();
-    this.setState({ beverages });
+    try {
+      let { beverages } = await getData();
+      this.setState({ beverages });
+    } catch (error) {
+      console.error(error);
+    }
   }
 
   render() {

@@ -12,8 +12,12 @@ class Footer extends Component {
   }
 
   async componentDidMount() {
-    let { footers } = await getData();
-    this.setState({ footers });
+    try {
+      let { footers } = await getData();
+      this.setState({ footers });
+    } catch (error) {
+      console.error(error);
+    }
   }
 
   render() {

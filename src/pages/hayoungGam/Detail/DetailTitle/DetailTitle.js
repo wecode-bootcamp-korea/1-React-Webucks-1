@@ -12,8 +12,12 @@ class DetailTitle extends Component {
   }
 
   async componentDidMount() {
-    let { breadcrumbs } = await getData();
-    this.setState({ breadcrumbs });
+    try {
+      let { breadcrumbs } = await getData();
+      this.setState({ breadcrumbs });
+    } catch (error) {
+      console.error(error);
+    }
   }
 
   render() {
