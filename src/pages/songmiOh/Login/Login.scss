@@ -1,34 +1,31 @@
 .container {
   display: flex;
-  min-height: 100vh;
-  background-color: rgb(255, 255, 247);
+  position: absolute;
+  width: 350px;
+  height: 450px;
+  margin-top: -230px;
+  margin-left: -200px;
+  top: 50%;
+  left: 50%;
+  border: 2px solid rgb(11, 140, 58);
+  border-radius: 1px;
+  background-color: rgb(255, 255, 255);
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
   .title {
-    margin: 20px;
-    color: rgb(0, 128, 0);
-    font-family: monospace;
-    font-size: 40px;
-    position: relative;
-    left: 50%;
-    margin-left: -250px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    font-family: 'Pacifico';
+    font-size: 50px;
+    text-align: center;
   }
   .loginBt {
+    position: relative;
     width: 250px;
     height: 50px;
-    margin: auto;
-    margin-bottom: 30px;
+    margin: auto 0px;
     background-color: rgb(135, 206, 250);
     color: rgb(255, 255, 255);
     font-size: 15px;
-    position: relative;
   }
-}
-
-.forgotPw {
-  // position: relative;
-}
-
-.pwLink {
-  // text-align: center;
 }
