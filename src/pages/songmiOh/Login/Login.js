@@ -3,26 +3,6 @@ import './Login.scss';
 import LoginForm from './LoginForm';
 
 class Login extends Component {
-  constructor() {
-    super();
-    this.state = {
-      loginIdValue: '',
-      loginPwValue: '',
-    };
-  }
-
-  handleIdInput = event => {
-    this.setState({
-      loginIdValue: event.target.value,
-    });
-  };
-
-  handlePwInput = event => {
-    this.setState({
-      loginPwValue: event.target.value,
-    });
-  };
-
   render() {
     return (
       <div className="container">
