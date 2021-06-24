@@ -11,21 +11,18 @@ class LoginForm extends Component {
   }
 
   handleIdInput = event => {
-    console.log(event.target.value);
     this.setState({
       loginIdValue: event.target.value,
     });
   };
 
   handlePwInput = event => {
-    console.log(event.target.value);
     this.setState({
       loginPwValue: event.target.value,
     });
   };
 
   render() {
-    console.log('현재값 출력:', this.state);
     return (
       <form className="loginBox">
         <input
@@ -40,6 +37,17 @@ class LoginForm extends Component {
           placeholder="비밀번호"
           onChange={this.handlePwInput}
         />
+        <button
+          className={
+            this.state.loginIdValue.includes('@') &&
+            this.state.loginPwValue.length > 4
+              ? 'loginBtnActive'
+              : 'loginBtn'
+          }
+          type="button"
+        >
+          로그인
+        </button>
       </form>
     );
   }

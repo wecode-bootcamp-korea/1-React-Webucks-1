@@ -14,4 +14,16 @@
     box-sizing: border-box;
     font-size: 15px;
   }
+  .loginBtn {
+    position: relative;
+    width: 250px;
+    height: 50px;
+    margin: auto 0px;
+    background-color: rgb(135, 206, 250);
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+  }
+  .loginBtnActive {
+    background-color: rgb(7, 23, 246);
+  }
 }
