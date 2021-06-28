@@ -1,20 +1,20 @@
-import React, { Component } from "react";
-import "./Login.scss";
+import React, { Component } from 'react';
+import './Login.scss';
 
 class Login extends Component {
   constructor() {
     super();
     this.state = {
-      loginId: "",
-      loginPw: "",
+      loginId: '',
+      loginPw: '',
     };
   }
 
-  handleIdInput = (event) => {
+  handleIdInput = event => {
     this.setState({ loginId: event.target.value });
   };
 
-  handlePwInput = (event) => {
+  handlePwInput = event => {
     this.setState({ loginPw: event.target.value });
   };
 
@@ -22,15 +22,27 @@ class Login extends Component {
     return (
       <div className="login">
         <header className="container">
-          <p>sstagram</p>
+          <p>songstagram</p>
           <input
             className="id"
             type="text"
             placeholder="전화번호, 사용자 이름 또는 이메일"
             onChange={this.handleIdInput}
           ></input>
-          <input className="pw" type="text" placeholder="비밀번호"></input>
-          <button className="btn" type="button">
+          <input
+            className="pw"
+            type="text"
+            placeholder="비밀번호"
+            onChange={this.handlePwInput}
+          ></input>
+          <button
+            className={
+              this.state.loginId.includes('@') && this.state.loginPw.length > 4
+                ? 'btn loginBtnActive'
+                : 'btn'
+            }
+            type="button"
+          >
             로그인
           </button>
         </header>
