@@ -1,0 +1,59 @@
+.login {
+  @import url("https://fonts.google.com/specimen/Nanum+Gothic");
+  background-color: rgb(219, 219, 219);
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -230px;
+    margin-left: -180px;
+    width: 350px;
+    height: 450px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(38, 38, 38);
+  }
+
+  p {
+    text-align: center;
+    margin-top: 55px;
+    margin-bottom: 25px;
+    font-family: "Pacifico";
+    font-size: 45px;
+  }
+
+  input {
+    width: 280px;
+    height: 35px;
+    margin-top: 15px;
+    padding-left: 10px;
+    border-radius: 3px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(202, 202, 202);
+  }
+
+  .btn {
+    width: 280px;
+    height: 35px;
+    margin-top: 15px;
+    padding: 0;
+    border: none;
+    border-radius: 7px;
+    background-color: rgb(154, 199, 244);
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+  }
+
+  .loginBtnActive {
+    background-color: rgb(38, 142, 245);
+  }
+
+  a {
+    margin-top: 130px;
+    font-size: 15px;
+    color: rgb(0, 55, 207);
+  }
+}
