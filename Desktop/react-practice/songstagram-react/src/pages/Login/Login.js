@@ -33,9 +33,11 @@ class Login extends Component {
             className="pw"
             type="text"
             placeholder="비밀번호"
-            onChange={this.handlePwInput}></input>
-          <button className={this.state.loginId.includes("@") && this.state.loginPw.length > 4 ? "loginBtnActive" "btn" : "btn"} type="button">
-          >로그인</button>
+            onChange={this.handlePwInput}
+          ></input>
+          <button className type="button">
+            >로그인
+          </button>
         </header>
         <footer>
           <a href="/">비밀번호를 잊으셨나요?</a>
