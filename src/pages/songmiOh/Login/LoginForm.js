@@ -41,7 +41,7 @@ class LoginForm extends Component {
           className={
             this.state.loginIdValue.includes('@') &&
             this.state.loginPwValue.length > 4
-              ? 'loginBtnActive'
+              ? 'loginBtn loginBtnActive'
               : 'loginBtn'
           }
           type="button"
