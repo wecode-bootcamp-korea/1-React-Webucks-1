@@ -8,17 +8,18 @@
 }
 
 .listBox {
-  width: 950px;
+  width: 850px;
 }
 
 .naviBar {
   margin: 0;
+  margin-bottom: 10px;
   padding: 20px, 30px;
   border: none;
   background-color: rgb(255, 255, 240);
 }
 
-.naviBar .naviTitle {
+.naviBar .naviBarTitle {
   color: rgb(0, 128, 0);
   font-family: monospace;
 }

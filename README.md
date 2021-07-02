@@ -1,10 +1,10 @@
-# I2E1
+## COMSMIC
 
-## 프로젝트 명
+### 📝 &nbsp;프로젝트 명
 
-Webucks(Starbucks clone)
+- Webucks(Starbucks clone)
 
-## 구성원
+### 😎&nbsp; 구성원
 
 - 오송미(PM)
 - 감하영
