@@ -25,3 +25,5 @@ const CoffeeData = [
     name: '레몬 티 피지오',
   },
 ];
+
+export default CoffeeData;

@@ -6,7 +6,7 @@ class Login extends Component {
   render() {
     return (
       <div className="container">
-        <div className="title">Wecafevin</div>
+        <div className="title">songbucks</div>
         <LoginForm />
         <footer className="forgotPw">
           <a

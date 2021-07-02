@@ -42,5 +42,6 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.4.0",
     "prettier": "^2.3.1"
-  }
+  },
+  "proxy": "http://10.89.0.38:8000"
 }
