@@ -1,0 +1,20 @@
+/* DrinkNutrition.js */
+@import 'styles/variables';
+@import 'styles/mixins';
+
+.drink-nutrition {
+  &__summary {
+    @include flex(space-between, normal);
+    padding: 20px 15px;
+    font-size: $font-large;
+    border-top: 1px solid $grey-200;
+    border-bottom: 1px solid $grey-200;
+  }
+}
+
+.drink-nutrition__table {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 20px;
+  padding-top: 20px;
+}

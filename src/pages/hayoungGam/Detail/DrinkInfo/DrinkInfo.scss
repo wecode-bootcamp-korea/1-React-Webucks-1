@@ -1,0 +1,37 @@
+/* DrinkInfo.js */
+@import 'styles/variables';
+@import 'styles/mixins';
+
+.drink-name {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid $black-primary-color;
+
+  &__text {
+    margin-bottom: 5px;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    font-size: $font-xlarge;
+    font-weight: bold;
+  }
+
+  &__eng-text {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    font-size: $font-small;
+  }
+
+  .drink-like-btn {
+    @include flex(flex-end, center);
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+  }
+}
+
+.drink-desc {
+  margin-bottom: 20px;
+  font-size: $font-medium;
+  line-height: 1.4;
+}

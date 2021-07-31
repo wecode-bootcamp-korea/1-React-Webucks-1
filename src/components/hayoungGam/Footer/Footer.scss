@@ -1,0 +1,14 @@
+/* Footer.js */
+@import 'styles/variables';
+@import 'styles/mixins';
+
+.footer {
+  width: 100%;
+  color: $white-color;
+  background: $black-secondary-color;
+
+  & .container {
+    @include flex(space-between, normal);
+    padding: 40px 0;
+  }
+}

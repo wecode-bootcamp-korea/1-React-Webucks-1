@@ -1,0 +1,12 @@
+/* DetailContents.js */
+@import 'styles/variables';
+@import 'styles/mixins';
+
+.drink-detail-area {
+  @include flex(space-between, normal);
+  gap: 0 40px;
+}
+
+.drink-infos {
+  width: 60%;
+}

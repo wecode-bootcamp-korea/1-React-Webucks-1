@@ -1,0 +1,20 @@
+/* DetailTitle.js */
+@import 'styles/variables';
+@import 'styles/mixins';
+
+.drink-category-title {
+  margin-bottom: 5px;
+  font-size: $font-xxlarge;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.breadcrumbs {
+  @include flex(flex-end, normal);
+  margin-bottom: 20px;
+  color: $grey-700;
+
+  &__list {
+    display: flex;
+  }
+}

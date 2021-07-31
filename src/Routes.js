@@ -1,5 +1,6 @@
 import { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { PATH } from 'utils/pathnames';
 
 // 송미 컴포넌트
 import ListSongmi from 'pages/songmiOh/List/List';
@@ -23,6 +24,7 @@ import DetailJingeun from 'pages/jingeunAhn/Detail/Detail';
 
 class Routes extends Component {
   render() {
+    const { login, list, detail } = PATH;
     return (
       <Router>
         <Switch>
@@ -32,9 +34,9 @@ class Routes extends Component {
           <Route exact path="/login-songmi" component={LoginSongmi} />
           <Route exact path="/list-songmi" component={ListSongmi} />
           <Route exact path="/detail-songmi" component={DetailSongmi} />
-          <Route exact path="/login-hayoung" component={LoginHayoung} />
-          <Route exact path="/list-hayoung" component={ListHayoung} />
-          <Route exact path="/detail-hayoung" component={DetailHayoung} />
+          <Route exact path={login} component={LoginHayoung} />
+          <Route exact path={list} component={ListHayoung} />
+          <Route exact path={`${detail}/:id`} component={DetailHayoung} />
           <Route exact path="/login-jingeun" component={LoginJingeun} />
           <Route exact path="/list-jingeun" component={ListJingeun} />
           <Route exact path="/detail-jingeun" component={DetailJingeun} />

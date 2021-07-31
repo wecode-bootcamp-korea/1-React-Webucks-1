@@ -1,0 +1,36 @@
+/* DrinkSection.js */
+@import 'styles/variables';
+
+.drinks-area + .drinks-area {
+  margin-top: 60px;
+}
+
+.drinks-title {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  margin-bottom: 20px;
+  padding: 0 20px;
+  background: $grey-200;
+
+  &__text {
+    margin-right: 25px;
+    font-size: $font-large;
+    font-weight: bold;
+  }
+
+  &__notice {
+    font-size: $font-small;
+  }
+
+  & .fa-mug-hot {
+    margin-right: 10px;
+    color: $brown-color;
+  }
+}
+
+.drinks {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  grid-gap: 40px 20px;
+}

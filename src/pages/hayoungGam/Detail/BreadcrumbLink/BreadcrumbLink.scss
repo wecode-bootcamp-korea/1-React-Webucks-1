@@ -1,0 +1,35 @@
+/* BreadcrumbLink.js */
+@import 'styles/variables';
+
+.breadcrumbs {
+  &__item {
+    position: relative;
+    margin-right: 20px;
+    font-size: $font-small;
+    font-weight: 300;
+    text-transform: uppercase;
+
+    &:not(:last-child):after {
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      margin-top: -4px;
+      content: '';
+      border-top: 1px solid $grey-700;
+      border-right: 1px solid $grey-700;
+      top: 50%;
+      right: -12px;
+      transform: rotate(45deg);
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

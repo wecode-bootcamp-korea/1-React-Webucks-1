@@ -1,0 +1,20 @@
+/* DrinkNutritionRow.js */
+@import 'styles/variables';
+@import 'styles/mixins';
+
+.drink-nutrition__table {
+  &__row {
+    @include flex(space-between, normal);
+    padding: 5px 15px 10px;
+    font-size: $font-medium;
+    line-height: 1.4;
+
+    &:nth-child(2n + 1) {
+      border-right: 1px dashed $grey-200;
+    }
+
+    &:nth-child(n + 5) {
+      margin-bottom: 30px;
+    }
+  }
+}

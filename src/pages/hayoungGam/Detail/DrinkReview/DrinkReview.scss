@@ -1,0 +1,46 @@
+/* DrinkReview.js */
+@import 'styles/variables';
+
+.drink-review {
+  &__title {
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    font-size: $font-large;
+    font-weight: bold;
+    border-bottom: 1px solid $grey-200;
+  }
+
+  &__list {
+    margin-bottom: 30px;
+
+    .no-review-message {
+      color: $grey-600;
+      font-size: $font-medium;
+    }
+  }
+}
+
+.review-form {
+  &__submit-btn {
+    display: none;
+  }
+}
+
+.review-fields {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+
+  &__label {
+    flex: 1 1 20%;
+    color: $grey-700;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  &__input {
+    flex: 1 1 80%;
+    padding: 13px 15px;
+    border: 1px solid $beige-200;
+    border-radius: 4px;
+  }
+}
