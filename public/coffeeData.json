@@ -1,0 +1,64 @@
+{
+  "coffeeData": [
+    {
+      "id": 1,
+      "img": "./Images/minkiChoi/ringo.jpg",
+      "name": "ringo"
+    },
+    {
+      "id": 2,
+      "img": "./Images/minkiChoi/vetty.jpg",
+      "name": "vetty"
+    },
+    {
+      "id": 3,
+      "img": "./Images/minkiChoi/deva.jpg",
+      "name": "deva"
+    },
+    {
+      "id": 4,
+      "img": "./Images/minkiChoi/glory.jpg",
+      "name": "glory"
+    },
+    {
+      "id": 5,
+      "img": "./Images/minkiChoi/liny.jpg",
+      "name": "liny"
+    },
+    {
+      "id": 6,
+      "img": "./Images/minkiChoi/malo.jpg",
+      "name": "malo"
+    },
+    {
+      "id": 7,
+      "img": "./Images/minkiChoi/plain.jpg",
+      "name": "plain"
+    },
+    {
+      "id": 8,
+      "img": "./Images/minkiChoi/walter.jpg",
+      "name": "walter"
+    },
+    {
+      "id": 9,
+      "img": "./Images/minkiChoi/breanna.jpg",
+      "name": "breanna"
+    },
+    {
+      "id": 10,
+      "img": "./Images/minkiChoi/cecil.jpg",
+      "name": "cecil"
+    },
+    {
+      "id": 11,
+      "img": "./Images/minkiChoi/ryo.jpg",
+      "name": "ryo"
+    },
+    {
+      "id": 12,
+      "img": "./Images/minkiChoi/duncan.jpg",
+      "name": "duncan"
+    }
+  ]
+}
